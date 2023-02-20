@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    /*General properties*/
+    min-height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voice{
+    /*General properties*/
+    background-color: black;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.voice__title{
+    /*General properties*/
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: titleColor 1s infinite ease-in-out alternate;
+}
+
+@keyframes titleColor {
+    from {color: rgb(229, 72, 90);}
+    to {color: rgb(239, 163, 188);}
+}
+
+
+.voice__form{
+    /*Display*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.voice__form--select{
+    /*General properties*/
+    cursor: pointer;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+
+.voice__form--select:hover{
+    background-color: rgb(239, 163, 188);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.voice__form--item{
+    /*Display*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__label{
+    color: white;
+}
+
+.input__range{
+    /*General properties*/
+    cursor: pointer;
+    appearance: none;
+    width: 70%;
+    background-color: white;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.input__range:hover{
+    background-color: rgb(239, 163, 188);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.input__text{
+    /*General properties*/
+    min-height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    line-height: 20px;
+}
+
+.input__text:focus{
+    background-color: rgb(239, 163, 188);
+}
+
+.form__btn{
+    /*General properties*/
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.form__btn:hover{
+    background-color: rgb(239, 163, 188);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}

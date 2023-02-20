@@ -30,11 +30,12 @@ function populateVoices() {
 
 function setVoiceType() {
     message.voice = browserVoices.find(voice => voice.name === this.value);
-    toggleVoiceOptions()
+    toggleVoiceOptions();
 }
 
 function handleSettings(ev) {
     message[ev.target.name] = ev.target.value;
+    toggleVoiceOptions();
 }
 
 function toggleVoiceOptions(startOver) {
